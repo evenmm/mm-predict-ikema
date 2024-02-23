@@ -1,1 +1,0 @@
-This folder is a mix between the code in "2024-02-06 presaved version" and "export feb 19" with binaries from "export feb 19"
