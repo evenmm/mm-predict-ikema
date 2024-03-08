@@ -48,6 +48,7 @@ def plot_cumulative(): #X, patient_dictionary_complete):
 
     n_splits = len(which_folds)
 
+    #predetermined_threshold = 0.02
     predetermined_threshold = 0.03
     predetermined_threshold_velo = 0.45
 
@@ -466,6 +467,9 @@ def plot_cumulative(): #X, patient_dictionary_complete):
         color_array = [plt.cm.viridis(0.9), plt.cm.viridis(0.6), plt.cm.viridis(0.3)]
         bar_color_array = ["dimgrey", "dimgrey", "dimgrey"] #["dimgrey", "darkgrey", "darkgrey"] #, "lightgrey"]
         auc_all = [auc_velo, auc_nlme, auc_LIN]
+        print("auc velo", np.mean(auc_velo, axis=-1))
+        print("auc nlme", np.mean(auc_nlme, axis=-1))
+        print("auc LIN", np.mean(auc_LIN, axis=-1))
         accuracy_all = [best_accuracy_velo, best_accuracy_nlme, best_accuracy_LIN]
         f1_all = [best_f1_velo, best_f1_nlme, best_f1_LIN]
         precision_all = [best_precision_velo, best_precision_nlme, best_precision_LIN]
@@ -493,7 +497,7 @@ def plot_cumulative(): #X, patient_dictionary_complete):
             tick_labels = [1, latest_cycle_start]
         tick_positions = [(cycle_nr - 1) * 28 + 1 for cycle_nr in tick_labels]
         """
-        fig, axs = plt.subplots(1,len(metric_names)+1, figsize=(20,5)) #, figsize=(16,5))
+        fig, axs = plt.subplots(1,len(metric_names)+1, figsize=(20,5)) #,figsize=(20,4)) #, figsize=(16,5))
         fig.suptitle("Threshold selected to "+threshold_logic)
         for metric_index, _ in enumerate(metric_names):
             ax = axs[metric_index]
@@ -542,7 +546,7 @@ def plot_cumulative(): #X, patient_dictionary_complete):
         elif t_choice == 2: 
             plt.savefig(PLOTDIR+crossfold_name+"_bars_maxf1.pdf", dpi=300)
         elif t_choice == 3: 
-            plt.savefig(PLOTDIR+crossfold_name+"_bars_fixed_threshold.pdf", dpi=300)
+            plt.savefig(PLOTDIR+crossfold_name+"_bars_fixed_threshold_"+"{:.2f}".format(predetermined_threshold)+".pdf", dpi=300)
         elif t_choice == 4:
             plt.savefig(PLOTDIR+crossfold_name+"_bars_80tpr_before_10.pdf", dpi=300)
         #plt.show()
@@ -563,7 +567,7 @@ def plot_cumulative(): #X, patient_dictionary_complete):
         elif t_choice == 2: 
             plt.savefig(PLOTDIR+crossfold_name+"_bars_maxf1_singlefolds.pdf", dpi=300)    
         elif t_choice == 3: 
-            plt.savefig(PLOTDIR+crossfold_name+"_bars_fixed_threshold_singlefolds.pdf", dpi=300)    
+            plt.savefig(PLOTDIR+crossfold_name+"_bars_fixed_threshold_"+"{:.2f}".format(predetermined_threshold)+"_singlefolds.pdf", dpi=300)    
         elif t_choice == 4:
             plt.savefig(PLOTDIR+crossfold_name+"_bars_80tpr_before_10_singlefolds.pdf", dpi=300)
         plt.close()

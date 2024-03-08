@@ -5,9 +5,9 @@
    version="1.1"
    id="svg2"
    xml:space="preserve"
-   width="1228.8026"
-   height="1029.9445"
-   viewBox="0 0 1228.8026 1029.9444"
+   width="1228.8934"
+   height="1029.8302"
+   viewBox="0 0 1228.8934 1029.8301"
    sodipodi:docname="example_patient.svg"
    inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -383,9 +383,9 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      showgrid="false"
-     inkscape:zoom="0.49149488"
-     inkscape:cx="1235.0078"
-     inkscape:cy="669.38642"
+     inkscape:zoom="0.6014689"
+     inkscape:cx="699.95307"
+     inkscape:cy="465.52698"
      inkscape:window-width="1920"
      inkscape:window-height="1131"
      inkscape:window-x="0"
@@ -395,7 +395,7 @@
      id="g8"
      inkscape:groupmode="layer"
      inkscape:label="example_patient"
-     transform="matrix(1.3333333,0,0,1.3333333,-1492.1878,-27.85539)"><g
+     transform="matrix(1.3333333,0,0,1.3333333,-1492.097,-27.85539)"><g
        id="g10"><path
          d="M 349.531,794.18 H 572.07 c 1.864,0 2.793,-0.489 2.793,-1.461 v -63.676 c 0,-0.977 -0.929,-1.465 -2.793,-1.465 H 349.531 c -1.863,0 -2.797,0.488 -2.797,1.465 v 63.676 c 0,0.972 0.934,1.461 2.797,1.461 z"
          style="fill:#ffffff;fill-opacity:0.8;fill-rule:nonzero;stroke:none"
@@ -2886,7 +2886,7 @@
          id="tspan30-8-7"
          style="stroke-width:0.998484"
          x="1120.0011"
-         y="31.475163">a) Perturbing rho_r</tspan></text><text
+         y="31.475163">a) Perturbing rho^r</tspan></text><text
        transform="scale(0.99848391,1.0015184)"
        style="font-variant:normal;font-weight:normal;font-size:13.9718px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.998484"
        id="text32-6-2-2"
@@ -2896,7 +2896,7 @@
          id="tspan30-8-7-6"
          style="stroke-width:0.998484"
          x="1581.5017"
-         y="31.475163">a) Perturbing rho_s</tspan></text><text
+         y="31.475163">b) Perturbing rho^s</tspan></text><text
        transform="scale(0.99848391,1.0015184)"
        style="font-variant:normal;font-weight:normal;font-size:13.9718px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.998484"
        id="text32-6-2-1"
@@ -2906,7 +2906,7 @@
          id="tspan30-8-7-8"
          style="stroke-width:0.998484"
          x="1581.5017"
-         y="376.54919">a) Perturbing M_0</tspan></text><text
+         y="376.54919">d) Perturbing M^0</tspan></text><text
        transform="scale(0.99848391,1.0015184)"
        style="font-variant:normal;font-weight:normal;font-size:13.9718px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.998484"
        id="text32-6-2-7"
@@ -2916,7 +2916,7 @@
          id="tspan30-8-7-9"
          style="stroke-width:0.998484"
          x="1120.0011"
-         y="376.54919">a) Perturbing pi_r</tspan></text><g
+         y="376.54919">c) Perturbing pi^r</tspan></text><g
        id="g2032"
        inkscape:label="example_patient_M"
        transform="matrix(1,0,0,-1,2257.9553,241.95486)"><path
